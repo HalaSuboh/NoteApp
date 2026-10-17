@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8E1E7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp">
+
+        <!-- Hero illustration -->
+        <ImageView
+            android:layout_width="231dp"
+            android:layout_height="163dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_hero_card"
+            android:contentDescription="Notes illustration"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_hero_pencil" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notey"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#005254"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="3dp" />
+
+        <!-- Welcome -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your notes, your way"
+            android:textSize="13sp"
+            android:textColor="#005254"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="13dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Remember Me -->
+        <CheckBox
+            android:id="@+id/cbRememberMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textSize="14sp"
+            android:textColor="#33252A"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Sign In -->
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SIGN IN"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/poppins_regular"
+            android:backgroundTint="#D95D7A"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Sign Up -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SIGN UP"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/poppins_regular"
+            android:backgroundTint="#D95D7A"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_blush">#F3D9C8</color>
+    <color name="bg_cream">#FDF8F3</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="input_bg">#F1E9E2</color>
+    <color name="forest_green">#3F5245</color>
+    <color name="forest_green_dark">#334438</color>
+    <color name="dusty_rose">#DF9484</color>
+    <color name="text_dark">#33322E</color>
+    <color name="text_muted">#8A8378</color>
+    <color name="error_red">#D64545</color>
+</resources>

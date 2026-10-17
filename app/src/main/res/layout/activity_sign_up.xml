@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#F8E1E7"
+        tools:context=".SignUp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/tvSignUpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#33252A"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvSignUpSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start capturing your ideas"
+                android:textSize="15sp"
+                android:textColor="#8A6870"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="30dp" />
+
+            <!-- Email — required, valid format, primary key of the user -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#33252A"
+                android:textColorHint="#B79AA1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvEmailError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter a valid email address"
+                android:textSize="12sp"
+                android:textColor="#D32F2F"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="14dp"
+                android:visibility="gone" />
+
+            <!-- First name — 3 to 10 characters -->
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#33252A"
+                android:textColorHint="#B79AA1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvFirstNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must be 3–10 characters"
+                android:textSize="12sp"
+                android:textColor="#D32F2F"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="14dp"
+                android:visibility="gone" />
+
+            <!-- Last name — 3 to 10 characters -->
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#33252A"
+                android:textColorHint="#B79AA1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvLastNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must be 3–10 characters"
+                android:textSize="12sp"
+                android:textColor="#D32F2F"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="14dp"
+                android:visibility="gone" />
+
+            <!-- Password — 6-12 chars, min 1 number, 1 lowercase, 1 uppercase -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#33252A"
+                android:textColorHint="#B79AA1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvPasswordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6–12 chars, incl. 1 upper, 1 lower, 1 number"
+                android:textSize="12sp"
+                android:textColor="#D32F2F"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="14dp"
+                android:visibility="gone" />
+
+            <!-- Confirm password -->
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:background="@drawable/edittext_background"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#33252A"
+                android:textColorHint="#B79AA1"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvConfirmPasswordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passwords do not match"
+                android:textSize="12sp"
+                android:textColor="#D32F2F"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="SIGN UP"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/poppins_regular"
+                android:backgroundTint="#D95D7A"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvGoToSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Already have an account? Sign in"
+                android:textSize="13sp"
+                android:textColor="#8A6870"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Live validation progress: one circle for each form field. -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgEmailStep"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/progress_empty" />
+
+                <ImageView
+                    android:id="@+id/imgFirstNameStep"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/progress_empty" />
+
+                <ImageView
+                    android:id="@+id/imgLastNameStep"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/progress_empty" />
+
+                <ImageView
+                    android:id="@+id/imgPasswordStep"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/progress_empty" />
+
+                <ImageView
+                    android:id="@+id/imgConfirmPasswordStep"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/progress_empty" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Dims the form behind the cat so the celebration reads as a clear
+         takeover moment rather than a small icon growing in a corner. -->
+    <View
+        android:id="@+id/viewSignUpDim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgDancingCat"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:contentDescription="Signing up animation"
+        android:scaleType="centerInside"
+        android:src="@drawable/cat_dance"
+        android:visibility="gone" />
+
+</FrameLayout>

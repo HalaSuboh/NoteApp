@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:rippleColor="#F3C2CE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title row: title + favorite heart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvNoteItemTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Note title"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#005254"
+                android:fontFamily="@font/poppins_regular"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <ImageView
+                android:id="@+id/ivNoteItemFavorite"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_favorite_border"
+                app:tint="#D95D7A"
+                android:background="@android:color/transparent"
+                android:contentDescription="Favorite"
+                android:layout_marginEnd="8dp" />
+
+
+        </LinearLayout>
+
+        <!-- Content snippet -->
+        <TextView
+            android:id="@+id/tvNoteItemSnippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Note content preview"
+            android:textSize="13sp"
+            android:textColor="#005254"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Tag chip + date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvNoteItemTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#7A3347"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_tag_chip" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvNoteItemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sep 5, 2026"
+                android:textSize="11sp"
+                android:textColor="#B79AA1"
+                android:fontFamily="@font/poppins_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
